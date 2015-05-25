@@ -13,6 +13,7 @@ use app\extensions\action\Functions;
 use app\extensions\action\Bitcoin;
 use app\extensions\action\Litecoin;
 use app\extensions\action\Greencoin;
+use app\extensions\action\Identification;
 use lithium\security\Auth;
 use lithium\storage\Session;
 use app\extensions\action\GoogleAuthenticator;
@@ -685,6 +686,9 @@ class UsersController extends \lithium\action\Controller {
 					$address = $details['greencoinaddress'][0];
 				}
 			}
+				$identify = new Identification();
+				$result = $identify->set($address);
+				
 			$data = array(
 				'greencoinaddress.0' => $address,
 				$currency.'newaddress'=>'No'
