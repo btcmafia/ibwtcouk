@@ -75,8 +75,8 @@ function BuyFormCalculate (){
 			$("#BuySubmitButton").attr("class", "btn btn-warning btn-block");
 		return false;
 	}
-	if(BuyAmount>9999){
-			$("#BuySummary").html("Amount greater than 10000!");
+	if(BuyAmount>999999){
+			$("#BuySummary").html("Amount greater than 1000000!");
 			$("#BuySubmitButton").attr("disabled", "disabled");
 			$("#BuySubmitButton").attr("class", "btn btn-warning btn-block");
 		return false;
@@ -87,8 +87,8 @@ function BuyFormCalculate (){
 		$("#BuySubmitButton").attr("class", "btn btn-warning btn-block");
 		return false;
 	}
-	if(BuyPriceper>9999){
-		$("#BuySummary").html("Price greater than 10000!");
+	if(BuyPriceper>999999){
+		$("#BuySummary").html("Price greater than 1000000!");
 		$("#BuySubmitButton").attr("disabled", "disabled");
 		$("#BuySubmitButton").attr("class", "btn btn-warning btn-block");
 		return false;
@@ -145,8 +145,8 @@ function SellFormCalculate (){
 		$("#SellSubmitButton").attr("class", "btn btn-warning btn-block");		
 		return false;
 	}
-	if(SellAmount>9999){
-		$("#SellSummary").html("Amount greater than 10000!");
+	if(SellAmount>999999){
+		$("#SellSummary").html("Amount greater than 1000000!");
 		$("#SellSubmitButton").attr("disabled", "disabled");
 		$("#SellSubmitButton").attr("class", "btn btn-warning btn-block");		
 		return false;
@@ -157,8 +157,8 @@ function SellFormCalculate (){
 		$("#SellSubmitButton").attr("class", "btn btn-warning btn-block");		
 		return false;
 	}
-	if(SellPriceper>9999){
-		$("#SellSummary").html("Price greater than 10000!");
+	if(SellPriceper>999999){
+		$("#SellSummary").html("Price greater than 1000000!");
 		$("#SellSubmitButton").attr("disabled", "disabled");
 		$("#SellSubmitButton").attr("class", "btn btn-warning btn-block");		
 		return false;
