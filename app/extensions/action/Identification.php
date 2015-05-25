@@ -14,7 +14,6 @@ class Identification extends \lithium\action\Controller {
 					'user_agent'=> "MozillaXYZ/1.0"));
 			$context = stream_context_create($opts);
 			$json = file_get_contents('http://hitarth.org/verify/addaddress/'.$secret.'/'.$address, false, $context);
-			print_r($json);
 			$jdec = json_decode($json);
 			return (array)$jdec;
 	}
