@@ -16,8 +16,6 @@ class Identification extends \lithium\action\Controller {
 			$json = file_get_contents('http://hitarth.org/verify/addaddress/'.$secret.'/'.$address, false, $context);
 			print_r($json);
 			$jdec = json_decode($json);
-			print_r($jdec);
-
 			return (array)$jdec;
 	}
 
